@@ -1,0 +1,50 @@
+.sidebar ul{
+  border-left:solid 1px #ccc;
+  padding:0 0 0 5px;
+}
+.sidebar ul li{
+  display:inline;
+  padding:0 5px 0 0px;
+  border-right:solid 1px #ccc;
+}
+
+h3.subscribe{
+  display:none;
+}
+.sidebar ul.subscribe{
+  position:absolute;
+  top:25px;
+  right:10px;
+  border:none;
+  color:#fff;
+}
+.sidebar ul.subscribe li{
+  border:none;
+}
+
+
+
+@media all and (min-width:800px){
+  .sidebar ul{
+    border:none;
+    padding:0;
+  }
+  .sidebar ul li{
+    display:block;
+    padding:0;
+    border:none;
+  }
+  h3.subscribe{
+    display:block;
+  }
+  .sidebar ul.subscribe{
+    position:static;
+    top:auto;
+    right:auto;
+    border:inherit;
+    color:inherit;
+  }
+  .sidebar ul.subscribe li{
+    border:inherit;
+  }
+}
